@@ -1,9 +1,9 @@
 {
-    "ABOS": "61d42da20ea225b43220208d",
-    "DevOps": "5df37d7da40daa71f4cde560",
-    "FrontEnd": "5df37d74438f832dfb6f254c",
-    "Management": "61d4453601379c427e5142e4",
-    "Price Engine": "61d42d7c05775be355c46ace",
-    "Testers": "5df37d8507078371ed798ecc",
-    "Business": "61d4463350338c4ea8a8a601"
+    "TeamName1": "uniqueid_1",
+    "TeamName2": "uniqueid_2",
+    "TeamName3": "uniqueid_3",
+    "TeamName4": "uniqueid_4",
+    "TeamName5": "uniqueid_5",
+    "TeamName6": "uniqueid_6",
+    "TeamName7": "uniqueid_7"
 }
