@@ -25,6 +25,19 @@ cd absence-notifier
 ```
 
 ### 📦 Install Dependencies
+Before installing dependencies, it's recommended to set up a virtual environment. This isolates your project's dependencies from the rest of your system.
+
+```bash
+# Create a virtual environment in the current directory
+python -m venv .venv
+
+# Activate the virtual environment
+source .venv/bin/activate
+```
+
+Installing Required Packages
+With the virtual environment activated, install the necessary dependencies from the requirements.txt file
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -32,8 +45,17 @@ pip install -r requirements.txt
 ### 🌐 Environment Setup
 Create a `.env` file in the project root with your Absence.io API credentials and Skype credentials as per the `.env file` example provided.
 
+## 📋 Gathering Skype Groups
+- Use `list_groups.py` to list and gather the Skype group IDs required for notifications.
+
+## 🔍 Locating Absence.io Team IDs
+- To find your Absence.io team IDs, log in to Absence.io and go to `Settings` > `Teams`.
+- Select a team and look at the address bar in your browser. For example, if the URL is `https://app.absence.io/#/settings/teams/61d42da20ea225b43220208f`, the team ID is `61d42da20ea225b43220208f`.
+
+Different selections will display different team IDs in the address bar.
+
 ## ⚙️ Configuration
-- Update `team_ids.json` and `skype_groups.json` with your team's information.
+- Update `team_ids.json` and `skype_groups.json` with the relevant IDs obtained from the above steps.
 - Ensure the `.env` file is correctly set up with your credentials.
 
 ## 🚀 Usage
@@ -73,7 +95,7 @@ To automate the absence notifications, set up a cron job:
 ```bash
 crontab -e
 # Add the following line to run the script every day at 8 AM
-0 8 * * * /usr/bin/python3 /path/to/absence-notifier/app.py >> /path/to/logfile.log 2>&1
+0 8 * * * /path/to/absence-notifier/.venv/bin/python3 /path/to/absence-notifier/app.py >> /path/to/logfile.log 2>&1
 ```
 
 ## 🛠 Creating a Service on Ubuntu
@@ -93,7 +115,7 @@ After=network.target
 [Service]
 User=username
 WorkingDirectory=/path/to/absence-notifier
-ExecStart=/usr/bin/python3 /path/to/absence-notifier/app.py
+ExecStart=/path/to/absence-notifier/.venv/bin/python3 /path/to/absence-notifier/app.py
 Restart=on-failure
 
 [Install]
@@ -108,11 +130,11 @@ sudo systemctl start absence-notifier.service
 ```
 
 ## 👐 Contributing
-Contributions, issues, and feature requests are welcome. Feel free to check our [issues page](link_to_issues_page).
+Contributions, issues, and feature requests are welcome. Feel free to check our [issues page](https://github.com/LavX/Absence.io-Notifier-for-Skype/issues).
 
 ## 📜 License
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 Your Name - [lavx@lavx.hu](mailto:lavx@lavx.hu)
-Project Link: [https://github.com/yourgithubprofile/absence-notifier](https://github.com/yourgithubprofile/absence-notifier)
+Project Link: [https://github.com/LavX/Absence.io-Notifier-for-Skype](https://github.com/LavX/Absence.io-Notifier-for-Skype)
