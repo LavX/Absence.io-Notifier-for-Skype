@@ -21,7 +21,7 @@ Absence.io Notifier is a Python Flask 🐍 application, designed to streamline n
 ### 📡 Clone the Repository
 ```bash
 git clone https://github.com/LavX/Absence.io-Notifier-for-Skype.git
-cd absence-notifier
+cd Absence.io-Notifier-for-Skype/
 ```
 
 ### 📦 Install Dependencies
@@ -115,8 +115,8 @@ After=network.target
 
 [Service]
 User=username
-WorkingDirectory=/path/to/absence-notifier
-ExecStart=/path/to/absence-notifier/.venv/bin/python3 /path/to/absence-notifier/app.py
+WorkingDirectory=/path/to/Absence.io-Notifier-for-Skype/
+ExecStart=/path/to/Absence.io-Notifier-for-Skype//.venv/bin/python3 /path/to/Absence.io-Notifier-for-Skype//app.py
 Restart=on-failure
 
 [Install]
