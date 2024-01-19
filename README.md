@@ -90,13 +90,14 @@ To use Skype notifications:
 3. Configure your Skype credentials in the `.env` file.
 
 ## 🔄 Setting Up a Cron Job for Regular Notifications
-To automate the absence notifications, set up a cron job:
-
+To automate the absence notifications, set up a cron job that uses curl to send a POST request to the application:
 ```bash
 crontab -e
 # Add the following line to run the script every day at 8 AM
-0 8 * * * /path/to/absence-notifier/.venv/bin/python3 /path/to/absence-notifier/app.py >> /path/to/logfile.log 2>&1
+0 8 * * * /bin/bash -c 'curl -X POST http://localhost:5000/notify-absences -H "x-api-key: YOUR_API_KEY" -H "Content-Type: application/json" -d "{\"date\": \"$(date +\%Y-\%m-\%d)\"}" >> /path/to/logfile.log 2>&1'
 ```
+In this setup, `$(date +\%Y-\%m-\%d)` dynamically generates the current date in the required format. Ensure that `YOUR_API_KEY` is replaced with a valid API key from your application.
+
 
 ## 🛠 Creating a Service on Ubuntu
 To run the application as a service, create a systemd unit file:
