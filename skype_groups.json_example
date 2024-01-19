@@ -1,0 +1,9 @@
+{
+    "TeamName1": ["19:example@thread.skype"],
+    "TeamName2": ["19:example@thread.skype", "19:example@thread.skype", "8:example"],
+    "TeamName3": ["19:example@thread.skype", "19:example@thread.skype"],
+    "TeamName4": ["19:example@thread.skype", "19:example@thread.skype"],
+    "TeamName5": ["19:example@thread.skype"],
+    "TeamName6": ["19:example@thread.skype", "19:example@thread.skype"],
+    "TeamName7": ["19:example@thread.skype", "19:example@thread.skype"]
+}

@@ -1,0 +1,6 @@
+.env
+__pycache__
+.venv
+api_keys.db
+skype_groups.json
+team_ids.json
