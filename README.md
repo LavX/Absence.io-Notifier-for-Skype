@@ -20,7 +20,7 @@ Absence.io Notifier is a Python Flask 🐍 application, designed to streamline n
 
 ### 📡 Clone the Repository
 ```bash
-git clone https://github.com/yourgithubprofile/absence-notifier.git
+git clone https://github.com/LavX/Absence.io-Notifier-for-Skype.git
 cd absence-notifier
 ```
 
