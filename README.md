@@ -136,5 +136,5 @@ Contributions, issues, and feature requests are welcome. Feel free to check our 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
-Your Name - [lavx@lavx.hu](mailto:lavx@lavx.hu)
+Laszlo A. Toth - [lavx@lavx.hu](mailto:lavx@lavx.hu)
 Project Link: [https://github.com/LavX/Absence.io-Notifier-for-Skype](https://github.com/LavX/Absence.io-Notifier-for-Skype)
