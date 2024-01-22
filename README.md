@@ -66,9 +66,9 @@ python app.py
 ```
 
 ### 🔑 API Key Management
-- Add a new API key: `python app.py --add`
-- Remove an API key: `python app.py --remove [key]`
-- Check an API key: `python app.py --check [key]`
+- Add a new API key: `python api_key_manager.py --add`
+- Remove an API key: `python api_key_manager.py --remove [key]`
+- Check an API key: `python api_key_manager.py --check [key]`
 
 ### 📬 Making Requests
 To notify absences, send a POST request with the date:
